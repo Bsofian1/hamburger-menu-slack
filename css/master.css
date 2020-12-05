@@ -105,6 +105,11 @@ a:hover{
 }
 
 
+.item .fa{
+ margin-left: 15px;
+ color: inherit;
+}
+
 
 /* tablette menu */
 
@@ -156,7 +161,20 @@ a:hover{
 
     #tryForFree:hover{
     background-color: #4a154b;
+  }
 
+  .item a:hover{
+    text-decoration: none;
+  }
+
+     .menu .item{
+      position: relative;
+    }
+
+    .menu .item:hover .subMenu1{
+    display: block;
+    position: absolute;
+  }
 
 }
 
@@ -172,6 +190,7 @@ a:hover{
 
   li.item.desktop{
     display: block;
+
   }
 }
 
