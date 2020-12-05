@@ -1,0 +1,241 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: helvetica, arial;
+}
+
+
+nav{
+  padding-left: 30px;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #1264a3;
+}
+
+.menu li{
+  font-size: 22px;
+  padding: 15px 5px;
+}
+
+.menu li a{
+  display: block;
+}
+
+.logo img{
+  width: 150px;
+}
+
+/* Mobile menu */
+.subMenu1, .subMenu2, .desktop{
+  display: none;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle{
+  order: 1;
+}
+
+.item.button{
+  order: 3;
+  width: 50%;
+  text-align: center;
+}
+
+.item{
+  width: 100%;
+  order: 2;
+  display: none;
+}
+
+.item.active{
+  display: block;
+}
+
+
+
+.toggle{
+  cursor: pointer;
+}
+
+/* Design of the hamburger menu */
+.bars{
+  background: black;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+}
+
+.bars::before,.bars::after{
+  background: black;
+  content:"";
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  width: 18px;
+}
+
+.bars::before{
+  top: 5px;
+}
+
+.bars::after{
+  top: -5px;
+}
+
+
+
+/* tablette menu */
+
+@media all and (min-width: 1080px){
+  .menu{
+    justify-content: space-between;
+  }
+  .toggle{
+    display: none;
+  }
+
+  li.item.desktop{
+    display: none;
+  }
+
+  .logo{
+    flex:0;
+  }
+
+  .item.button.desktop{
+    width: auto;
+    order: 2;
+    display: block;
+  }
+
+  .item.button:not(.desktop){
+    display: none;
+  }
+
+  .item:not(.button){
+    width: auto;
+    order: 1;
+    display: block;
+    text-align: left;
+  }
+
+  .toggle{
+    order: 3;
+  }
+
+  #tryForFree{
+    background-color: #611f69;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin: 0 20px;
+  }
+
+    #tryForFree:hover{
+    background-color: #4a154b;
+
+
+}
+
+@media all and (min-width: 1200px){
+  .item{
+    display: block;
+    width: auto;
+  }
+
+  .menu li.item{
+    padding: 15px 10px;
+  }
+
+  li.item.desktop{
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d
